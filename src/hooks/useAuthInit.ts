@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect } from "react";
-import { useAppDispatch, useAppSelector } from "@/lib/hooks";
-import { restoreAuth } from "@/lib/slices/authSlice";
+import { useAppDispatch, useAppSelector } from "@/stores/hooks";
+import { restoreAuth } from "@/stores/slices/authSlice";
 import { decodeUser, getCookie } from "@/lib/cookies";
 
 export function useAuthInit() {
